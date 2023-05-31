@@ -1,0 +1,96 @@
+@use 'sass:math';
+
+/* Function */
+
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $value - the value in pixel you want to convert
+ *
+ * e.g. div { width: toRem(400);}
+ *
+ */
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;
+
+  @return $remValue;
+}
+
+/* Variables */
+
+$success: #00b248;
+$default: #212121;
+$error:   #e64a19;
+
+$colors: (
+        'success': $success,
+        'default': $default,
+        'error': $error,
+);
+
+/* Mixins */
+
+/**
+ * CSS Button color mixin
+ *
+ * info, .valid {
+ * @include button(green, null, darken(green, 10%));
+ * }
+ *
+ */
+
+@mixin button($color, $background-color, $hover-color) {
+  width: 12.5rem;
+  display: block;
+  color: $color;
+  background-color: $background-color;
+
+  font: {
+    size: 1.25rem;
+  }
+
+  text: {
+    decoration: none;
+    align: center;
+  }
+
+  &:hover {
+    @if $background-color == 'white' {
+      background-color: darken($hover-color, 5%);
+    }
+
+    @else if $background-color == 'black' {
+      background-color: lighten($hover-color, 50%);
+    }
+
+    @else {
+      background-color: lighten($hover-color, 8%);
+    }
+  }
+}
+
+/**
+ * CSS Border-radius mixin
+ *
+ * e.g. p { @include border-radius(8);}
+ *
+ */
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+/**
+ * CSS Opacity with fallback for IE8+.
+ *
+ * e.g. .fade {@include opacity(.4);}
+ *
+ */
+
+// Opacity mixin
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie); //IE8
+}
