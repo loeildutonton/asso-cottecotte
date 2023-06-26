@@ -2,29 +2,77 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Retrouvez toutes nos poules prêtent à être adoptées dans le Sud-Ouest, avec des conseils spécialisés à l'adoption.">
   <title>Association les Cottes Cottes</title>
-  <!-- Bootstrap CDN CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <!-- CSS interne -->
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 <body>
-<header>
-  <nav class="navbar navbar-light bg-light">
+<header class="navbar-header" role="banner">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
     <a class="navbar-brand" href="#">
       <img src="assets/images/logo.jpg" width="60" height="60" class="d-inline-block align-top" alt="">
       Association Les Cottes Cottes
     </a>
+    <button class="navbar-toggler mb-5" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Features</a>
+        <a class="nav-item nav-link" href="#">Pricing</a>
+        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      </div>
+    </div>
   </nav>
 </header>
 
-<main class="container-fluid">
-  <h1>Bienvenue</h1>
+<main class="container-fluid" role="main">
+  <div class="d-flex justify-content-center justify-content-sm-center justify-content-md-end justify-content-lg-end gap-4 mt-5 mb-5">
+    <button type="button" class="btn btn-primary">Faire un don</button>
+    <button type="button" class="btn btn-secondary">Adhérer</button>
+  </div>
+
+  <div class="jumbotron">
+    <img src="assets/images/bg-poules.jpg" class="jumbotron-image img-fluid bg-poules" alt="">
+    <h1 class="display-4">Bienvenue !</h1>
+    <p class="lead">Notre association, a pour but de sauver les poules de réformes et de les proposer aux particuliers.</p>
+    <hr class="my-4">
+    <p>N'attendez plus ! Adoptez et offrez une nouvelle vie à une ou plusieurs poules !</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Consultez les sauvetages en cours</a>
+    </p>
+  </div>
+
+  <section>
+    <h1>Nos actions en chiffre</h1>
+    <p>
+      Grâce à nos partenaires, aux adoptants et à l’association, C’est le nombre d’animaux qui ne sont pas partis à
+      l’abattoir depuis décembre 2020.
+    </p>
+
+    <div class="actions">
+      <div class="actions__item"></div>
+      <div class="actions__item"></div>
+      <div class="actions__item"></div>
+      <div class="actions__item"></div>
+      <div class="actions__item"></div>
+      <div class="actions__item"></div>
+      <div class="actions__item"></div>
+      <div class="actions__item"></div>
+      <div class="actions__item"></div>
+      <div class="actions__item"></div>
+    </div>
+  </section>
+
 </main>
 
-
+<footer role="contentinfo"></footer>
 <!-- Popper CD -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <!-- Bootstrap CDN JavaScript -->
