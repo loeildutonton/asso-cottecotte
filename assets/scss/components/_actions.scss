@@ -1,0 +1,14 @@
+@media ($grid-breakpoints, "md") {
+  .actions__content-mobile__images {
+
+    &__big {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__small {
+
+    }
+  }
+}

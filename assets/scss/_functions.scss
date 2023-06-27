@@ -1,0 +1,17 @@
+@use 'sass:math';
+
+/* Function */
+
+/**
+ * Convert font-size from px to rem with px fallback
+ *
+ * @param $value - the value in pixel you want to convert
+ *
+ * e.g. div { width: toRem(400);}
+ *
+ */
+@function toRem($value) {
+  $remValue: math.div($value, 16) + rem;
+
+  @return $remValue;
+}

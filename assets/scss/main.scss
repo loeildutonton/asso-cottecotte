@@ -1,6 +1,7 @@
-@import "base";
-@import "component";
-@import "layout";
-@import "normalise";
+@use "base" as *;
+@use "functions" as *;
 
-@import "Pages/index";
+@use "components/index" as *;
+
+/* Bootstrap */
+@use "node_modules/bootstrap/scss/_variables.scss" as *;
