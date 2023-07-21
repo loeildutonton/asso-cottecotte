@@ -13,8 +13,8 @@
 <header class="navbar-header" role="banner">
   <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
     <a class="navbar-brand" href="#">
-      <img src="assets/images/logo.jpg" width="60" height="60" class="d-inline-block align-top" alt="">
-      Association Les Cottes Cottes
+      <img src="assets/images/logo.png" width="60" height="60" class="d-inline-block align-top" alt="logo Poule">
+      <span class="navbar-brand__text">Association Les Cottes Cottes</span>
     </a>
     <button class="navbar-toggler mb-5" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,16 +23,14 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        <a class="nav-item nav-link" href="#">Évènements</a>
       </div>
     </div>
   </nav>
 </header>
 
 <main class="container-fluid" role="main">
-  <div class="d-flex justify-content-center justify-content-sm-center justify-content-md-end justify-content-lg-end gap-4 mt-5 mb-5">
+  <div class="button-group mt-5 mb-5">
     <button type="button" class="btn btn-primary">Faire un don</button>
     <button type="button" class="btn btn-secondary">Adhérer</button>
   </div>
@@ -102,7 +100,7 @@
       </li>
     </ul>
 
-    <div class="actions -content-change">
+    <div class="actions -content-change mt-5">
       <div class="actions__content-mobile">
         <h2>Les Cottes Cottes</h2>
         <p>
@@ -119,7 +117,7 @@
 
         <div class="actions__content-mobile__images">
           <div class="actions__content-mobile__images__big">
-            <img src="assets/images/poules-6.jpg" alt="Poules de réforme en plein air">
+            <img class="img-fluid" src="assets/images/poules-6.jpg" alt="Poules de réforme en plein air">
           </div>
           <div class="actions__content-mobile__images__small">
             <img src="assets/images/poules-1.jpg" alt="poules rousses en gros plan">
@@ -131,6 +129,56 @@
             <img src="assets/images/poules-8.jpg" alt="poule rousse qui a pondu des oeufs dans le poulailler">
             <img src="assets/images/poules-9.jpg" alt="poule rousse qui mangent des graines dans leur mangeoire">
             <img src="assets/images/poules-10.jpg" alt="Deux éleveurs portant des poules rousses dans leurs bras">
+          </div>
+        </div>
+
+        <div class="actions__content-mobile__carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/poules-6.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/poules-1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/poules-2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/poules-3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/poules-5.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/poules-4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/poules-7.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/poules-8.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/poules-9.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/poules-10.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Précédent</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Suivant</span>
+            </a>
           </div>
         </div>
 
@@ -173,18 +221,20 @@
 </main>
 
 <footer role="contentinfo">
-  <ul class="list-footer">
-    <li class="list-footer-item -facebook">
-      <a class="list-footer-item__link" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-    <li class="list-footer-item -pinterest">
-      <a class="list-footer-item__link"  href="https://www.pinterest.fr/" target="_blank">Pinterest</a></li>
-    <li class="list-footer-item -instagram">
-      <a class="list-footer-item__link"  href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-    <li class="list-footer-item -ml">
-      <a class="list-footer-item__link"  href="#" target="_blank">Mentions Légales</a>
-    </li>
-    <li class="list-footer-item -copyright">©2023 - Les Cottes Cottes</li>
-  </ul>
+  <div class="footer-wrapper">
+    <ul class="list-footer">
+      <li class="list-footer-item -facebook">
+        <a class="list-footer-item__link" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+      <li class="list-footer-item -pinterest">
+        <a class="list-footer-item__link"  href="https://www.pinterest.fr/" target="_blank">Pinterest</a></li>
+      <li class="list-footer-item -instagram">
+        <a class="list-footer-item__link"  href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+      <li class="list-footer-item -ml">
+        <a class="list-footer-item__link"  href="#" target="_blank">Mentions Légales</a>
+      </li>
+    </ul>
+    <p class="footer-wrapper__copyright">©2023 - Les Cottes Cottes</p>
+  </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

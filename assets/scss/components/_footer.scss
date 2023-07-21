@@ -1,6 +1,6 @@
 @use '../functions' as *;
 
-@media (max-width: 768px) {
+@media (min-width: 576px) {
   footer {
     .list-footer {
       margin-top: toRem(60);
@@ -35,11 +35,38 @@
           height: toRem(300);
           background-color: #000000;
         }
+      }
+    }
+    .footer-wrapper__copyright {
+      text-align: center;
+    }
+  }
+}
 
-        &.-copyright {
-          text-align: center;
+@media (min-width: 992px) {
+  footer {
+    .list-footer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .list-footer-item {
+        &.-facebook,
+        &.-pinterest,
+        &.-ml {
+          background-color: transparent;
+        }
+        &.-instagram {
+          background: none;
         }
       }
+    }
+    .footer-wrapper {
+      background: url("/assets/images/poules-2.jpg") center / contain no-repeat;
+    }
+    .footer-wrapper__copyright {
+      margin-bottom: 0;
+      color: #ffffff;
+      text-align: center;
     }
   }
 }

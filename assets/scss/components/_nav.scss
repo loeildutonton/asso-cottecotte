@@ -1,0 +1,14 @@
+@use '../functions' as *;
+
+@media (min-width: 576px) {
+  .navbar-brand__text {
+    position: relative;
+    top: toRem(15);
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    margin-left: toRem(100);
+  }
+}
