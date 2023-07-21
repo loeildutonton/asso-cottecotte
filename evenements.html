@@ -1,22 +1,193 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Évènements Association les Cottes Cottes</title>
-  <!-- Bootstrap CDN CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <!-- CSS interne -->
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Évènements Association les Cottes Cottes</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS interne -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 <body>
-<h1>Évènements les Cottes Cottes</h1>
+<header class="navbar-header" role="banner">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" width="60" height="60" class="d-inline-block align-top" alt="logo Poule">
+            <span class="navbar-brand__text">Association Les Cottes Cottes</span>
+        </a>
+        <button class="navbar-toggler mb-5" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html" target="_self">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="evenements.html" target="_self">Évènements</a>
+            </div>
+        </div>
+    </nav>
+</header>
 
+<main class="container-fluid" role="main">
+    <div class="button-group mt-5 mb-5">
+        <button type="button" class="btn btn-primary">Faire un don</button>
+        <button type="button" class="btn btn-secondary">Adhérer</button>
+    </div>
 
+  <h1 class="mb-4">Nos prochains évènements :</h1>
 
-<!-- Popper CD -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<!-- Bootstrap CDN JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <p>
+      <b>Si vous ne trouvez pas de dates dans votre département. Vous pouvez remplir <a href="#">ce formulaire</a> pour nous
+      indiquer que vous recherchez des poules par chez vous. Nous organiserons une date suivant les demandes.</b></p>
+
+    <section class="evenements">
+        <div class="card text-center mb-3">
+    <div class="card-header">
+        Sauvetage de poules de réforme à Congrier (53) 23 juillet 2023
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Ensemble, faisons la différence et offrons aux poules pondeuses bio la vie qu’elles méritent.</h5>
+      <p class="card-text">
+          Vous êtes passionnés par les animaux et souhaitez apporter votre soutien à une cause qui vous tient à cœur ?
+          Ne manquez pas notre événement de sauvetage de poules pondeuses bio de plein air qui se tiendra le dimanche
+          23 juillet à Congrier, un charmant village situé en Mayenne, à proximité de Pouancé et Segré dans le Maine-et-Loire.
+      </p>
+      <a href="#" class="btn btn-primary">Lire la suite</a>
+    </div>
+    <div class="card-footer text-muted">
+        12 juillet 2023
+    </div>
+  </div>
+
+        <div class="evenements__cards mb-4">
+            <div class="card mb-3">
+                <img class="card-img-top" src="assets/images/poules-2.jpg" alt="Poules de réforme">
+                <div class="card-body">
+                    <h5 class="card-title">Sauvetage de poule plein-air Monassut (64) du 4 au 10 août 2023</h5>
+                    <p class="card-text">
+                        Urgent : Sauvetage de poules pondeuses de 18 mois ! Réservez dès maintenant ! Secteur 64160 Monassut à
+                        20 minutes de Pau. Nous organisons un sauvetage urgent de poules pondeuses âgées de 18 mois qui ont
+                        besoin d’un foyer aimant. Ces poules méritent une vie meilleure après avoir passé leur jeunesse en élevage,
+                        et nous avons besoin de votre aide
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Monassut (64)</li>
+                    <li class="list-group-item">4 au 10 août 2023</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Lire la suite</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img class="card-img-top" src="assets/images/poules-6.jpg" alt="Poules de réforme">
+                <div class="card-body">
+                    <h5 class="card-title">Sauvetage de poules de réforme à Saint-Trimoël (22) Le 1 septembre 2023</h5>
+                    <p class="card-text">
+                        Saint-Trimoël dans le 22, Sauvetage de poules rousses de 18 mois le 1er septembre de 10h à 13h. Réservation
+                        OBLIGATOIRE par SMS au 06 58 55 11 92 en indiquant « réservation st-Trimoël , votre nom, prénom, nombre
+                        de poules »Ou par le formulaire ci-dessous :3 euros la poule.Merci de prévoir un moyen de transport le jour J.
+                        L’adresse vous sera communiquée par SMS la veille.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Saint-Trimoël (22)</li>
+                    <li class="list-group-item">1er septembre de 10h à 13h</li>
+                    <li class="list-group-item">06 58 55 11 92</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Lire la suite</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img class="card-img-top" src="assets/images/poules-8.jpg" alt="Poules de réforme">
+                <div class="card-body">
+                    <h5 class="card-title">Sauvetage de poules de réforme à Vigneux-de-Bretagne (44) fin novembre 2023</h5>
+                    <p class="card-text">
+                        Vigneux de Bretagne (44) Fin novembre 2023, environ 600 poules pondeuses Bio à sauver.
+                        3 euros la poule Réservation OBLIGATOIRE par SMS au +33658551192 en indiquant « réservation
+                        vigneux de bretagne, nom, prénom, nombre de poules choisies » Ou via le formulaire ci-dessous
+                        La date sera un samedi, plus de précisions bientôt.Nous vous enverrons l’adresse par SMS la veille
+                        de la date.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Vigneux de Bretagne (44)</li>
+                    <li class="list-group-item">Fin novembre 2023</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Lire la suite</a>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <img class="card-img-top" src="assets/images/poules-1.jpg" alt="Poules de réforme">
+                <div class="card-body">
+                    <h5 class="card-title">Sauvetage de poules de réforme à Ouzouer-sur-Loire (45) tous les samedis du mois de septembre 2023</h5>
+                    <p class="card-text">
+                        Ouzouer-sur-Loire, Adoptez vos poules tous les samedis du mois de mai 2023 Soucieux du devenir
+                        de ses poules réformées, l’éleveur (ancien partenaire de PouleHouse) souhaite que celles-ci finissent
+                        leur vie dans un jardin plutôt que de les envoyer à l’abattoir. Elles recherchent toutes une nouvelle
+                        famille pour la vie. Il demande 5 euros par poule et offre la 6 ième.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ouzouer-sur-Loire (45)</li>
+                    <li class="list-group-item">tous les samedis du mois de septembre 2023</li>
+                    <li class="list-group-item">06 58 55 11 92</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Lire la suite</a>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Précédent">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Précédent</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Suivant">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Suivant</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</main>
+<footer role="contentinfo">
+    <div class="footer-wrapper">
+        <ul class="list-footer">
+            <li class="list-footer-item -facebook">
+                <a class="list-footer-item__link" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li class="list-footer-item -pinterest">
+                <a class="list-footer-item__link" href="https://www.pinterest.fr/" target="_blank">Pinterest</a></li>
+            <li class="list-footer-item -instagram">
+                <a class="list-footer-item__link" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li class="list-footer-item -ml">
+                <a class="list-footer-item__link" href="#" target="_blank">Mentions Légales</a>
+            </li>
+        </ul>
+        <p class="footer-wrapper__copyright">©2023 - Les Cottes Cottes</p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>
