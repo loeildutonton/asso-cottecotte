@@ -1,6 +1,6 @@
 @use '../functions' as *;
 
-@media (min-width: 576px) {
+@media (min-width: 320px) and (max-width: 991px) {
   .navbar-brand__text {
     position: relative;
     top: toRem(15);
@@ -10,5 +10,9 @@
 @media (min-width: 992px) {
   .navbar-collapse {
     margin-left: toRem(100);
+  }
+  .navbar-brand__text {
+    position: relative;
+    top: toRem(15);
   }
 }

@@ -1,46 +1,22 @@
 @use '../functions' as *;
 
-@media (min-width: 576px) {
+@media (min-width: 320px) and (max-width: 991px){
+
+  .carousel-item {
+    display: flex;
+    justify-content: start;
+    width: inherit;
+    margin-top: toRem(10);
+    float: none;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
   .actions__content-mobile {
     &__paragraphe {
       margin-top: toRem(30);
-    }
-    &__carousel {
-      display: none;
-    }
-  }
-  .actions__content-mobile__images {
-    margin-top: toRem(30);
-    &__big {
-      margin-bottom: toRem(10);
-      img {
-        width: 100%;
-      }
-    }
-
-    &__small {
-      display: flex;
-      flex-direction: initial;
-      flex-wrap: wrap;
-      gap: toRem(10);
-      img {
-        width: 32%;
-      }
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .actions__content-mobile {
-    &__carousel {
-      display: block;
-    }
-  }
-
-  .actions__content-mobile__images {
-    &__big,
-    &__small {
-      display: none;
     }
   }
 }

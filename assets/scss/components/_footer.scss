@@ -1,6 +1,6 @@
 @use '../functions' as *;
 
-@media (min-width: 576px) {
+@media (min-width: 320px) and (max-width: 991px) {
   footer {
     .list-footer {
       margin-top: toRem(60);
